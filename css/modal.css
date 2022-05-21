@@ -1,0 +1,163 @@
+    /* Smooth Animation */
+
+.modal.open .modal__overlay,
+.modal.open .modal__window{
+    transform: scale(1);
+}
+
+.modal.hide .modal__overlay,
+.modal.hide .modal__window{
+    transform: scale(1);
+}
+
+.modal__overlay,
+.modal__window{
+    transform: scale(0);
+}
+
+.modal.open .modal__window{
+    transform: translateY(100px);
+}
+
+.modal.open .modal__overlay{
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal.hide .modal__window{
+    transform: translateY(-200px);
+}
+
+.modal.hide .modal__overlay{
+    background: rgba(0, 0, 0, 0);
+}
+
+    /* Settings */
+
+h1, h2 h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+} 
+
+    /* CSS */
+
+.modal{
+
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.modal__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .0);
+    transform: background .3s linear;
+}
+
+.modal__window{
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    
+    transform: translateY(-300px);
+    transition: transform .3s ease-in-out;
+
+}
+
+.modal__header{
+    text-align: center;
+    
+}
+
+.modal__subtitle{
+    font-size: 20px;
+    
+}
+
+.modal__exit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.modal__body{
+    font-size: 17px;
+}
+
+.modal__content{
+    padding: 30px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.modal__footer{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(0, 0, 0, .1);    
+}
+
+
+/* Cards */
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card__item{
+    border: 1px solid black;
+    margin: 40px;
+    padding: 10px;
+}
+
+.img{
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+
+}
+
+.card__title{
+    font-size: 30px;
+    padding: 10px 0;
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__text{
+    font-size: 20px;
+    color: darkorchid;
+    margin-bottom: 10px;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__btn{
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    text-decoration: none;
+
+}
+
+.footer__btn.footer__btn-margin{
+    margin: 0 15px;
+    background-color: green;
+}
